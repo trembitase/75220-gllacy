@@ -6,6 +6,293 @@
   </head>
   <body>
 		
+		<header class="header layoutCenter">
+    	<a href="index.html">
+    		<img class="header-logo" width="154" height="64" src="http://placehold.it/154x64" alt="Глейси">
+    	</a>
+    	
+    	<nav class="mainNav">
+    		<ul class="mainNav-list">
+    			<li class="mainNav-item">
+    				<span class="mainNav-link mainNav-link--active">Каталог</span>
+    				<ul class="mainNav-innerList wrapLight">
+    					<li class="innerList-item"><span class="innerList-marked">Новинки</span></li>
+    					<li class="innerList-item"><span class="innerList-link">Сливочное</span></li>
+    					<li class="innerList-item"><a class="innerList-link" href="#">Щербеты</a></li>
+    					<li class="innerList-item"><a class="innerList-link" href="#">Фруктовый лед</a></li>
+    					<li class="innerList-item"><a class="innerList-link" href="#">Мелорин</a></li>
+    				</ul>
+   				</li>
+    			<li class="mainNav-item"><a class="mainNav-link" href="#">Доставка и оплата</a></li>
+    			<li class="mainNav-item"><a class="mainNav-link" href="#">О Компании</a></li>
+    		</ul>
+    	</nav>
+    	
+    	<div class="header-user">
+    		<div class="user-search">
+    			<button class="search-btn wrapDarken" type="button">Поиск</button>
+    			<div class="search-field wrapLight"><input type="search" name="search" placeholder="Что ищем?"></div>
+    		</div>
+    		
+    		<div class="user-login">
+    			<a class="login-btn wrapDarken" href="#">Вход</a>
+    			<form class="loginForm wrapLight" action="https://echo.htmlacademy.ru" method="post">
+    				<input type="email" name="mail" placeholder="Электронная почта">
+    				<input type="password" name="password" placeholder="Пароль">
+    				<input class="btn" type="submit" name="enter" value="Войти">
+    				<a class="login-link" href="#">Забыли пароль?</a>
+    				<a class="login-link" href="#">Новая регистрация</a>
+    			</form>
+    		</div>
+    		
+    		<div class="user-cart">
+    			<a class="cart-btn wrapDarken" href="#">Пусто</a>
+    			<div class="cart-tableBlock wrapLight">
+    				<table class="cart-table">
+    					<caption>Итого: 750 руб.</caption>
+    					<tr>
+    						<td><button class="btnClose cartTable-btnClose" type="button">Удалить</button></td>
+    						<td><img width="33" height="33" src="http://placehold.it/33" alt="Пломбир с апельсиновым джемом"></td>
+    						<td>Пломбир с апельсиновым джемом</td>
+    						<td>1,5 кг х <span class="cartTable-price">200 руб.</span></td>
+    						<td>300 руб.</td>
+    					</tr>
+    					<tr>
+    						<td><button class="btnClose cartTable-btnClose" type="button">Удалить</button></td>
+    						<td><img width="33" height="33" src="http://placehold.it/33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+    						<td>Клубничный пломбир с присыпкой из белого шоколада</td>
+    						<td>1,5 кг х <span class="cartTable-price">300 руб.</span></td>
+    						<td>450 руб.</td>
+    					</tr>
+    				</table>
+    				<a class="btn cartTable-btn" href="#">Оформить заказ</a>
+    			</div>
+    		</div>
+    		
+    		<div class="user-info">
+    			С 10 до 20, ежедневно
+    			<a class="info-tel" href="tel:88124502525">8 812 450-25-25</a>
+    		</div>
+    	</div>
+    </header>
+    
+    
+		<main class="layoutCenter">
+			<ul class="breadcrumbs">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="catalog.html">Каталог</a></li>
+				<li><span class="bredcrumbs--active">Сливочное</span></li>
+			</ul>
+			<h1 class="title--lg">Сливочное мороженое</h1>
+			
+			<form class="formGoods" action="https://echo.htmlacademy.ru" method="get">
+				<fieldset class="formGoods-group">
+					<legend class="formGoods-groupTitle">Сортировка:</legend>
+					<select class="wrapDarken" name="sorting">
+						<option value="popularity">по популярности</option>
+						<option value="cheap">сначала недорогие</option>
+						<option value="costly">сначала дорогие</option>
+						<option value="fatness">по жирности</option>
+					</select>
+				</fieldset>
+				
+				<fieldset class="formGoods-group">
+					<legend class="formGoods-groupTitle">Цена: 100 руб. – 500 руб.</legend>
+					<div class="wrapDarken">
+						<div class="formGoods-range"><span class="formGoods-rangeControls"></span></div>
+					</div>
+				</fieldset>
+				
+				<fieldset class="formGoods-group">
+					<legend class="formGoods-groupTitle">Жирность:</legend>
+					<div class="wrapDarken">
+						<input  id="flag1" type="radio" name="fatness" value="0%">
+						<label for="flag1">0%</label>
+						<input  id="flag2" type="radio" name="fatness" value="until 10%" checked>
+						<label for="flag2">до 10%</label>
+						<input  id="flag3" type="radio" name="fatness" value="until 30%">
+						<label for="flag3">до 30%</label>
+						<input  id="flag4" type="radio" name="fatness" value="over 30%">
+						<label for="flag4">выше 30%</label>
+					</div>
+				</fieldset>
+				
+				<fieldset class="formGoods-group">
+					<legend class="formGoods-groupTitle">Наполнители:</legend>
+					<div class="wrapDarken">
+						<input id="opt1" type="checkbox" name="fillers" value="chocolates" checked>
+						<label for="opt1">шоколадные</label>
+						<input id="opt2" type="checkbox" name="fillers" value="sugars" checked>
+						<label for="opt2">сахарные присыпки</label>
+						<input id="opt3" type="checkbox" name="fillers" value="fruits">
+						<label for="opt3">фрукты</label>
+						<input id="opt4" type="checkbox" name="fillers" value="sirups">
+						<label for="opt4">сиропы</label>
+						<input id="opt5" type="checkbox" name="fillers" value="jams">
+						<label for="opt5">джемы</label>
+					</div>
+				</fieldset>
+				<a class="formGoods-btn wrapDarken" href="#">Применить</a>
+			</form>
+			
+			<div class="catalog">
+				<div class="goods hitList-goods">
+    			<img width="267" height="267" src="http://placehold.it/267" alt="">
+    			<div class="goods-price">
+    				<span class="goods-priceValue">310</span>/кг
+    			</div>
+    			<a class="goods-txt" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+    			<a class="btn goods-btn" href="#">Быстрый просмотр</a>
+    		</div>
+    		
+    		<div class="goods hitList-goods">
+    			<img width="267" height="267" src="http://placehold.it/267" alt="">
+    			<div class="goods-price">
+    				<span class="goods-priceValue">380</span>/кг
+    			</div>
+    			<a class="goods-txt" href="#">Сливочно-кофейное с кусочками шоколада</a>
+    			<a class="btn goods-btn" href="#">Быстрый просмотр</a>
+    		</div>
+    		
+    		<div class="goods hitList-goods">
+    			<img width="267" height="267" src="http://placehold.it/267" alt="">
+    			<div class="goods-price">
+    				<span class="goods-priceValue">355</span>/кг
+    			</div>
+    			<a class="goods-txt" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+    			<a class="btn goods-btn" href="#">Быстрый просмотр</a>
+    		</div>
+    		
+    		<div class="goods hitList-goods">
+    			<img width="267" height="267" src="http://placehold.it/267" alt="">
+    			<div class="goods-price">
+    				<span class="goods-priceValue">415</span>/кг
+    			</div>
+    			<a class="goods-txt" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+    			<a class="btn goods-btn" href="#">Быстрый просмотр</a>
+    		</div>
+    		
+    		<div class="goods hitList-goods">
+    			<img width="267" height="267" src="http://placehold.it/267" alt="">
+    			<div class="goods-price">
+    				<span class="goods-priceValue">325</span>/кг
+    			</div>
+    			<a class="goods-txt" href="#">Сливочное с брусничным джемом</a>
+    			<a class="btn goods-btn" href="#">Быстрый просмотр</a>
+    		</div>
+    		
+    		<div class="goods hitList-goods">
+    			<img width="267" height="267" src="http://placehold.it/267" alt="">
+    			<div class="goods-price">
+    				<span class="goods-priceValue">410</span>/кг
+    			</div>
+    			<a class="goods-txt" href="#">Сливочно-черничное с цельными ягодами черники</a>
+    			<a class="btn goods-btn" href="#">Быстрый просмотр</a>
+    		</div>
+    		
+    		<div class="goods hitList-goods">
+    			<img width="267" height="267" src="http://placehold.it/267" alt="">
+    			<div class="goods-price">
+    				<span class="goods-priceValue">375</span>/кг
+    			</div>
+    			<a class="goods-txt" href="#">Сливочно-лимонное с карамельной присыпкой</a>
+    			<a class="btn goods-btn" href="#">Быстрый просмотр</a>
+    		</div>
+    		
+    		<div class="goods hitList-goods">
+    			<img width="267" height="267" src="http://placehold.it/267" alt="">
+    			<div class="goods-price">
+    				<span class="goods-priceValue">320</span>/кг
+    			</div>
+    			<a class="goods-txt" href="#">Сливочное с шоколадной стружкой</a>
+    			<a class="btn goods-btn" href="#">Быстрый просмотр</a>
+    		</div>
+    		
+    		<div class="goods hitList-goods">
+    			<img width="267" height="267" src="http://placehold.it/267" alt="">
+    			<div class="goods-price">
+    				<span class="goods-priceValue">440</span>/кг
+    			</div>
+    			<a class="goods-txt" href="#">Сливочно-ванильное с кусочками шоколада</a>
+    			<a class="btn goods-btn" href="#">Быстрый просмотр</a>
+    		</div>
+    		
+    		<div class="goods hitList-goods">
+    			<img width="267" height="267" src="http://placehold.it/267" alt="">
+    			<div class="goods-price">
+    				<span class="goods-priceValue">435</span>/кг
+    			</div>
+    			<a class="goods-txt" href="#">Сливочноe с ментоловым сиропом</a>
+    			<a class="btn goods-btn" href="#">Быстрый просмотр</a>
+    		</div>
+    		
+    		<div class="goods hitList-goods">
+    			<img width="267" height="267" src="http://placehold.it/267" alt="">
+    			<div class="goods-price">
+    				<span class="goods-priceValue">355</span>/кг
+    			</div>
+    			<a class="goods-txt" href="#">Сливочное с кусочками черного шоколада</a>
+    			<a class="btn goods-btn" href="#">Быстрый просмотр</a>
+    		</div>
+    		
+    		<div class="goods hitList-goods">
+    			<img width="267" height="267" src="http://placehold.it/267" alt="">
+    			<div class="goods-price">
+    				<span class="goods-priceValue">420</span>/кг
+    			</div>
+    			<a class="goods-txt" href="#">Сливочное с мятным сиропом</a>
+    			<a class="btn goods-btn" href="#">Быстрый просмотр</a>
+    		</div>
+			</div>
+			
+			<div class="pagination">
+				<span class="pagination-btn pagination-prev pagination-btn--disabled" title="Предыдущая"></span>
+				<span class="pagination-btn pagination-btn--active">1</span>
+				<a href="#" class="pagination-btn">2</a>
+				<a href="#" class="pagination-btn">3</a>
+				<a href="#" class="pagination-btn">4</a>
+				<a href="#" class="pagination-btn">5</a>
+				<a href="#" class="pagination-btn pagination-next" title="Следующая"></a>
+			</div>
+		</main>
+   
+   
+   <footer class="footer layoutCenter">
+    	<div class="footer-social">
+    		<a class="social-btn social-tw" href="#" title="Твиттер">Твиттер</a>
+    		<a class="social-btn social-inst" href="#" title="Инстаграм">Инстаграм</a>
+    		<a class="social-btn social-fb" href="#" title="Фейсбук">Фейсбук</a>
+    		<a class="social-btn social-vk" href="#" title="Вконтакте">Вконтакте</a>
+    	</div>
+    	<div class="footer-business">
+    		<div class="business-colLeft">
+    			<a class="business-link business-link--marked" href="#">Для поставщиков</a>
+    			<a class="business-link" href="#">О производстве</a>
+    		</div>
+    		<div class="business-colRightt">
+    			<a class="business-link" href="#">Наши документы</a>
+    			<a class="business-link" href="#">Экологические стандарты</a>
+    		</div>
+    	</div>
+    	<div class="footer-copyright">
+    		<img class="copyright-logo" src="http://placehold.it/108x38" alt="HTML Academy">
+    		<p class="copyright-txt">
+    			Сделано в <a class="copyright-link" href="https://htmlacademy.ru">HTML Academy</a> © 2016
+    		</p>
+    	</div>
+    </footer>
+    
+    
+    <div class="modal">
+    	<form class="feedback" action="https://echo.htmlacademy.ru" method="post">
+    		<button class="btnClose feedback-btnClose" type="button">Закрыть</button>
+    		<h3 class="feedback-title">Мы обязательно вам ответим!</h3>
+    		<input type="text" name="name" placeholder="Как вас зовут?">
+    		<input type="email" name="mail" placeholder="Ваша почта для ответа?">
+    		<textarea name="response" cols="30" rows="10">Напишите что-нибудь...</textarea>
+    		<input class="btn feedback-btn" type="submit" value="Отправить">
+    	</form>
+    </div>
     
   </body>
 </html>
