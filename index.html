@@ -2,11 +2,217 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+    <title>Глейси</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+		
+    <div>
+    	<input class="sliderToggle" id="slide1" type="radio" name="toggle" checked>
+    	<input class="sliderToggle" id="slide2" type="radio" name="toggle">
+    	<input class="sliderToggle" id="slide3" type="radio" name="toggle">
+    </div>
+    
+    <div class="container">
+    	<header class="header layoutCenter">
+    		<img class="header-logo" width="154" height="64" src="http://placehold.it/154x64" alt="Глейси">
+    		
+    		<nav class="mainNav">
+    			<ul class="mainNav-list">
+    				<li class="mainNav-item">
+    					<a class="mainNav-link" href="catalog.html">Каталог</a>
+    					<ul class="mainNav-innerList wrapLight">
+    						<li class="innerList-item"><span class="innerList-marked">Новинки</span></li>
+    						<li class="innerList-item"><a class="innerList-link" href="catalog.html">Сливочное</a></li>
+    						<li class="innerList-item"><a class="innerList-link" href="#">Щербеты</a></li>
+    						<li class="innerList-item"><a class="innerList-link" href="#">Фруктовый лед</a></li>
+    						<li class="innerList-item"><a class="innerList-link" href="#">Мелорин</a></li>
+    					</ul>
+   					</li>
+    				<li class="mainNav-item"><a class="mainNav-link" href="#">Доставка и оплата</a></li>
+    				<li class="mainNav-item"><a class="mainNav-link" href="#">О Компании</a></li>
+    			</ul>
+    		</nav>
+    		
+    		<div class="header-user">
+    			<div class="user-search">
+    				<button class="search-btn wrapDarken" type="button">Поиск</button>
+    				<div class="search-field wrapLight"><input type="search" name="search" placeholder="Что ищем?"></div>
+    			</div>
+    			
+    			<div class="user-login">
+    				<a class="login-btn wrapDarken" href="#">Вход</a>
+    				<form class="login-form wrapLight" action="https://echo.htmlacademy.ru" method="post">
+    					<input type="email" name="mail" placeholder="Электронная почта">
+    					<input type="password" name="password" placeholder="Пароль">
+    					<input class="btn" type="submit" name="enter" value="Войти">
+    					<a class="login-link" href="#">Забыли пароль?</a>
+    					<a class="login-link" href="#">Новая регистрация</a>
+    				</form>
+    			</div>
+    			
+    			<div class="user-cart"><a class="cart-btn wrapDarken" href="#">Пусто</a></div>
+    			<div class="user-info">
+    				С 10 до 20, ежедневно
+    				<a class="info-tel" href="tel:88124502525">8 812 450-25-25</a>
+    			</div>
+    		</div>
+    	</header>
+    	
+    	
+    	<main class="layoutCenter">
+    		<div class="slider">
+    			<div class="slider-slide slider-slide1">
+    				<h2 class="slide-title">Крем-брюле и пломбир<br> с малиновым джемом</h2>
+    				<a class="btn slide-btn" href="#">Давайте оба!</a>
+    			</div>
+    			<div class="slider-slide slider-slide2">
+    				<h2 class="slide-title">Шоколадный пломбир<br> и лимонный сорбет </h2>
+    				<a class="btn slide-btn" href="#">Давайте оба!</a>
+    			</div>
+    			<div class="slider-slide slider-slide3">
+    				<h2 class="slide-title">Пломбир с помадкой<br> и клубничный щербет</h2>
+    				<a class="btn slide-btn" href="#">Давайте оба!</a>
+    			</div>
+    			<div class="slider-controls">
+    				<label class="sliderBtn" for="slide1"></label>
+    				<label class="sliderBtn" for="slide2"></label>
+    				<label class="sliderBtn" for="slide3"></label>
+    			</div>
+    		</div>
+    		
+    		<div class="promo">
+    			<div class="promo-block">
+    				<h2 class="promo-title">Малинка даром!</h2>
+    				<p class="promo-txt">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+    				<a class="btn promo-btn" href="#">Хочу варенье!</a>
+    			</div>
+    			<div class="promo-block">
+    				<h2 class="promo-title">Шоколадки даром!</h2>
+    				<p class="promo-txt">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+    				<a class="btn promo-btn" href="#">Хочу шоколадки!</a>
+    			</div>
+    		</div>
+    		
+    		<div class="hitList">
+    			<div class="goods hitList-goods">
+    				<img width="267" height="267" src="http://placehold.it/267" alt="">
+    				<div class="goods-price">
+    					<span class="goods-priceValue">310</span>/кг
+    				</div>
+    				<a class="goods-txt" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+    				<a class="btn goods-btn" href="#">Быстрый просмотр</a>
+    			</div>
+    			
+    			<div class="goods hitList-goods">
+    				<img width="267" height="267" src="http://placehold.it/267" alt="">
+    				<div class="goods-price">
+    					<span class="goods-priceValue">380</span>/кг
+    				</div>
+    				<a class="goods-txt" href="#">Сливочно-кофейное с кусочками шоколада</a>
+    				<a class="btn goods-btn" href="#">Быстрый просмотр</a>
+    			</div>
+    			
+    			<div class="goods hitList-goods">
+    				<img width="267" height="267" src="http://placehold.it/267" alt="">
+    				<div class="goods-price">
+    					<span class="goods-priceValue">355</span>/кг
+    				</div>
+    				<a class="goods-txt" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+    				<a class="btn goods-btn" href="#">Быстрый просмотр</a>
+    			</div>
+    			
+    			<div class="goods hitList-goods">
+    				<img width="267" height="267" src="http://placehold.it/267" alt="">
+    				<div class="goods-price">
+    					<span class="goods-priceValue">415</span>/кг
+    				</div>
+    				<a class="goods-txt" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+    				<a class="btn goods-btn" href="#">Быстрый просмотр</a>
+    			</div>
+    		</div>
+    		
+    		<article class="about">
+    			<h3 class="about-title">Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
+    			<p class="about-txt">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+    			<p class="about-txt">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+    			<p class="about-txt">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+    			<p class="about-txt">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
+    		</article>
+    		
+    		<div class="infoBlock">
+    			<div class="infoBlock-news">
+    				<p>Новое в нашем блоге</p>
+    				<a class="news-link" href="#">10  способов сервировки фруктовых щербетов к столу</a>
+    			</div>
+    			<div class="infoBlock-subscribe">
+    				<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+    				<form class="subscribeForm" action="https://echo.htmlacademy.ru" method="post">
+    					<input type="email" name="mail" placeholder="Электронная почта">
+    					<input class="btn" type="submit" value="Отправить">
+    				</form>
+    			</div>
+    		</div>
+    	</main>
+    	
+    	
+    	<div class="map">
+    		<img src="http://placehold.it/1200x430" alt="Карта">
+    		<div class="map-contacts">
+    			<p class="contacts-adress">
+    				Адрес главного офиса и<br> 
+    				офлайн магазина:<br>
+						<span class="contacts-adress--marked">
+							ул. Большая Конюшенная<br>
+						 19/8, Санкт-Петербург
+						</span>
+					</p>
+    			<p class="contacts-phone">
+    				Для заказов по телефону:<br>
+    				<a class="contacts-phone--marked" href="tel:88124502525">8 812 450-25-25</a><br>
+						(с 10 до 20 ежедневно)
+    			</p>
+    			<a class="btn contacts-link" href="#">Форма обратной связи</a>
+    		</div>
+    	</div>
+    	
+    	
+    	<footer class="footer layoutCenter">
+    		<div class="footer-social">
+    			<a class="social-btn social-tw" href="#" title="Твиттер">Твиттер</a>
+    			<a class="social-btn social-inst" href="#" title="Инстаграм">Инстаграм</a>
+    			<a class="social-btn social-fb" href="#" title="Фейсбук">Фейсбук</a>
+    			<a class="social-btn social-vk" href="#" title="Вконтакте">Вконтакте</a>
+    		</div>
+    		<div class="footer-business">
+    			<div class="business-colLeft">
+    				<a class="business-link business-link--marked" href="#">Для поставщиков</a>
+    				<a class="business-link" href="#">О производстве</a>
+    			</div>
+    			<div class="business-colRightt">
+    				<a class="business-link" href="#">Наши документы</a>
+    				<a class="business-link" href="#">Экологические стандарты</a>
+    			</div>
+    		</div>
+    		<div class="footer-copyright">
+    			<img class="copyright-logo" src="http://placehold.it/108x38" alt="HTML Academy">
+    			<p class="copyright-txt">
+    				Сделано в <a class="copyright-link" href="https://htmlacademy.ru">HTML Academy</a> © 2016
+    			</p>
+    		</div>
+    	</footer>
+    	
+    	
+    	<div class="modal">
+    		<form class="feedback" action="https://echo.htmlacademy.ru" method="post">
+    			<button class="btnClose feedback-btnClose" type="button">Закрыть</button>
+    			<h3 class="feedback-title">Мы обязательно вам ответим!</h3>
+    			<input type="text" name="name" placeholder="Как вас зовут?">
+    			<input type="email" name="mail" placeholder="Ваша почта для ответа?">
+    			<textarea name="response" cols="30" rows="10">Напишите что-нибудь...</textarea>
+    			<input class="btn feedback-btn" type="submit" value="Отправить">
+    		</form>
+    	</div>
+    	
+    </div>
   </body>
 </html>
