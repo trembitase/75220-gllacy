@@ -1,6 +1,7 @@
 body {
 	font-family: Roboto, Arial, sans-serif;
 	font-weight: 500;
+	font-style: normal;
   font-size: 16px;
   line-height: 22px;
   color: #323232; /* fff */
@@ -10,12 +11,10 @@ body {
 	line-height: 0.85;
 	color: #fff;
 	font-weight: bold;
-	font-style: normal;
+	
 }
 .title--md {
 	font-size: 24px;
 	line-height: 0.8;
 	color: #323232;
-	font-weight: 500;
-	font-style: normal;
 }
